@@ -26,7 +26,7 @@ pipeline {
      //               step([$class: 'CoberturaPublisher', coberturaReportFile: 'coverage/coverage.xml'])
      //           }
      //       }
-      //  }
+       }
         stage('Run Analyzer') {
             steps {
                 sh "dartanalyzer --options analysis_options.yaml ."
